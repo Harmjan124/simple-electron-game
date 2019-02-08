@@ -10,6 +10,7 @@ function createWindow () {
     let win = new BrowserWindow({ width: 800, height: 600, frame: false });
 
     win.toggleDevTools();
+
     let engine = new EngineImpl(new WorldImpl());
 
     ipc.on('getEngine', function (event:any, arg:any) {

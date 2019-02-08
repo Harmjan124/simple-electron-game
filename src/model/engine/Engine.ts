@@ -6,5 +6,7 @@ import {Input} from "../Input";
 export interface Engine {
     setInput(input: Input):void
 
+    shutdown(): void
+
     getWorld(): World
 }
