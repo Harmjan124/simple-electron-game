@@ -2,13 +2,16 @@
   "name": "simple-electron-game",
   "version": "0.1.0",
   "description": "simple electron game with js",
-  "main": "index.js",
+  "main": "target/index.js",
   "scripts": {
-    "start": "electron ."
+    "tsc": "tsc",
+    "start": "tsc | electron ."
   },
   "author": "Harmjan124 robinslager mar-sn",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.0.4"
+    "electron": "^4.0.4",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.2"
   }
 }
