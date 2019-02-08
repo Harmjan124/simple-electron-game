@@ -28,6 +28,8 @@ export class EngineImpl implements Engine{
                 right.setWorldPosition(newPost);
             });
         },10);
+
+
         this.whileLoop();
     }
 

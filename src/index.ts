@@ -1,5 +1,6 @@
 import {EngineImpl} from "./model/engine/EngineImpl";
 import {WorldImpl} from "./model/world/WorldImpl";
+import {Player} from "./gameObjects/Player";
 
 const { app, BrowserWindow } = require('electron');
 const ipc = require('electron').ipcMain;
@@ -11,7 +12,7 @@ function createWindow () {
 
     win.toggleDevTools();
 
-    let engine = new EngineImpl(new WorldImpl());
+    let engine = new EngineImpl(new WorldImpl(new Player()));
 
     ipc.on('getEngine', function (event:any, arg:any) {
         win.webContents.send('engine', engine);

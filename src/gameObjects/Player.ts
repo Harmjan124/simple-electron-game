@@ -3,7 +3,7 @@ import {Point} from "../model/Point";
 import {Size} from "../model/Size";
 
 
-export class player extends BaseGameObject{
+export class Player extends BaseGameObject{
     getImage(): string {
         return "./resources/model.png";
     }
