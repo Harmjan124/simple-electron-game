@@ -3,7 +3,7 @@ import {Point} from "../model/Point";
 import {Size} from "../model/Size";
 
 
-export class Rock extends BaseGameObject{
+export class player extends BaseGameObject{
     getImage(): string {
         return "./resources/stone.svg";
     }
@@ -16,4 +16,3 @@ export class Rock extends BaseGameObject{
         return true;
     }
 }
-
