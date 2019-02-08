@@ -5,11 +5,11 @@ import {Size} from "../model/Size";
 
 export class player extends BaseGameObject{
     getImage(): string {
-        return "./resources/stone.svg";
+        return "./resources/model.png";
     }
 
     getSize(): Size {
-        return new Size(new Point(20, 10), new Point(20, 0), new Point(0, 10));
+        return new Size(new Point(-20, -50), new Point(20, 0), new Point(0, -50));
     }
 
     isStatic(): Boolean {
