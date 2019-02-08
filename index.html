@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simpel electron game</title>
+    <title>Simple electron game</title>
+    <script>
+        //var remote = require('electron').remote;
+
+        //var engine = remote.getGlobal('engine');
+    </script>
 </head>
 <body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
 </body>
 </html>

@@ -11,8 +11,15 @@ function createWindow () {
 
     win.toggleDevTools();
     let engine = new EngineImpl(new WorldImpl());
+
+    ipc.on('getEngine', function (event:any, arg:any) {
+        win.webContents.send('engine', engine);
+    });
+
     // and load the index.html of the app.
-    win.loadFile('../index.html');
+    win.loadFile('index.html');
+
+
 }
 
 app.on('ready', createWindow);
