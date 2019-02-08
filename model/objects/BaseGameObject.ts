@@ -1,6 +1,6 @@
 import {GameObject} from "./GameObject";
-import {Size} from "./Size";
-import {Point} from "./Point";
+import {Size} from "../Size";
+import {Point} from "../Point";
 
 export abstract class BaseGameObject implements GameObject{
     private _worldPosition: Point = new Point(0,0);

@@ -1,5 +1,5 @@
-import {Point} from "./Point";
-import {Size} from "./Size";
+import {Point} from "../Point";
+import {Size} from "../Size";
 
 export interface GameObject {
     getImage(): SVGImageElement;
@@ -21,4 +21,6 @@ export interface GameObject {
     isParent(): Boolean;
 
     getSize(): Size;
+
+    isStatic(): Boolean;
 }
