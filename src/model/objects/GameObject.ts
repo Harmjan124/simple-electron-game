@@ -2,7 +2,7 @@ import {Point} from "../Point";
 import {Size} from "../Size";
 
 export interface GameObject {
-    getImage(): SVGImageElement;
+    getImage(): string;
 
     worldPosition(): Point
 

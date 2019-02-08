@@ -11,7 +11,6 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.0.4",
-    "svg-inline-loader": "^0.8.0",
     "ts-node": "^8.0.2",
     "typescript": "^3.2.2"
   }

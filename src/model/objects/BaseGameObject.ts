@@ -15,7 +15,7 @@ export abstract class BaseGameObject implements GameObject{
         return this._children;
     }
 
-    abstract getImage(): SVGImageElement;
+    abstract getImage(): string;
 
     abstract getSize(): Size;
 

@@ -3,11 +3,9 @@ import {Point} from "../model/Point";
 import {Size} from "../model/Size";
 
 
-
 export class Rock extends BaseGameObject{
-    getImage(): SVGImageElement {
-        let stone_img = require('./Object-texture/stone.svg');
-        return stone_img;
+    getImage(): string {
+        return "./resources/stone.svg";
     }
 
     getSize(): Size {
