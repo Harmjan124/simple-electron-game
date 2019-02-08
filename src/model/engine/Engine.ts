@@ -4,7 +4,7 @@ import {Physics} from "../physics/Physics";
 import {Input} from "../Input";
 
 export interface Engine {
-    setInput(input: Input)
+    setInput(input: Input):void
 
     getWorld(): World
 }

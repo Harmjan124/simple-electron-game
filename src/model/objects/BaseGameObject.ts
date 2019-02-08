@@ -4,7 +4,7 @@ import {Point} from "../Point";
 
 export abstract class BaseGameObject implements GameObject{
     private _worldPosition: Point = new Point(0,0);
-    private _parent: GameObject;
+    private _parent: GameObject | null = null;
     private _children: GameObject[] = [];
 
     addChild(child: GameObject): void {
@@ -28,7 +28,8 @@ export abstract class BaseGameObject implements GameObject{
     }
 
     relativePosition(): Point {
-        return undefined;
+        //TODO
+        return new Point(0,0);
     }
 
     setParent(parent: GameObject): void {
@@ -41,6 +42,10 @@ export abstract class BaseGameObject implements GameObject{
 
     setWorldPosition(p: Point): void {
         this._worldPosition = p;
+    }
+
+    isStatic(): Boolean {
+        return false;
     }
 
 }
