@@ -1,0 +1,14 @@
+{
+  "name": "simple-electron-game",
+  "version": "0.1.0",
+  "description": "simple electron game with js",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Harmjan124 robinslager mar-sn",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.4"
+  }
+}
